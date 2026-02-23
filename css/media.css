@@ -330,6 +330,7 @@
   }
 
   .footer-phone-icon {
+    display: block;
     position: absolute;
     top: 50%;
     left: 12px;
