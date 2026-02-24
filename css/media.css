@@ -1,4 +1,4 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .container {
     max-width: 1140px;
   }
@@ -69,10 +69,13 @@
     align-items: flex-start;
   }
 
-  .features-icon {
+  .features-icon-wrap {
     width: 54px;
     height: 54px;
     margin-bottom: 26px;
+  }
+
+  .features-icon {
   }
 
   .features-subtitle {
@@ -183,6 +186,7 @@
 
   .strategies-item {
     flex-basis: calc((100% - 30px * 2) / 3);
+    border: 1px solid #dedede;
   }
 
   .strategies-item-text {
@@ -339,5 +343,8 @@
 
   .form-btn {
     margin: 0;
+    max-width: 150px;
+    /* height: 39px; */
+    padding: 7px 15px;
   }
 }

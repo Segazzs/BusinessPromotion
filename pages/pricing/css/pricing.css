@@ -1,0 +1,260 @@
+/* PRICING */
+
+.pricing {
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+
+.pricing-sub-title {
+  font-weight: 600;
+  font-size: 24px;
+  color: #22343d;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.pricing-title {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 18px;
+}
+
+.pricing-desc {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 73px;
+}
+
+/* ENTERPRISE */
+
+.enterprise {
+  padding: 47px 0;
+  background: linear-gradient(180deg, #f6f6f6 0%, rgba(246, 246, 246, 0) 100%);
+}
+
+.enterprise-subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  color: #22343d;
+  text-align: center;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.enterprise-title {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 25px;
+}
+
+.enterprise-desc {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #22343d;
+  max-width: 338px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.enterprise-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  padding: 11px 18px;
+}
+
+/* PRODUCT */
+
+.product {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.product-title {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #22343d;
+  max-width: 342px;
+  margin-bottom: 33px;
+  margin: 0 auto;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-img {
+  margin-bottom: 31px;
+}
+
+.product-img-desk {
+  display: none;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 334px;
+  margin: 0 auto;
+}
+
+.product-item {
+}
+
+.product-item-sub {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+
+.product-icon-wrap {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f4f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-sub-icon {
+}
+
+.product-sub-text {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #22343d;
+}
+
+.product-item-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #22343d;
+}
+
+/* QUESTION */
+
+.question {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.question-title {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+
+.question-desc {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 30px;
+}
+
+.question-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.question-item {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.question-icon {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.question-line {
+  width: 12px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  position: relative;
+}
+
+.question-line::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(90deg);
+  transition: transform 250ms ease-in-out;
+}
+
+.question-btn {
+  width: 24px;
+  height: 24px;
+  background-color: #02897a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.question-ask {
+  font-weight: 500;
+  font-size: 18px;
+  color: #22343d;
+}
+
+.question-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 250ms ease-in-out,
+    opacity 250ms ease-in-out,
+    margin-top 250ms ease-in-out;
+  font-weight: 400;
+  font-size: 16px;
+  color: #22343d;
+}
+
+/* .question-icon:hover + .question-answer {
+  max-height: 200px;
+  opacity: 1;
+} */
+
+.rotate::before {
+  transform: rotate(180deg);
+}
+
+.open {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 16px;
+}
