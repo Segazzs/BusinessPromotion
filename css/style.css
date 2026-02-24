@@ -54,6 +54,7 @@ a {
 
 .header {
   box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.25);
+  z-index: 999;
 }
 
 .header .container {
@@ -61,6 +62,7 @@ a {
   padding-top: 17px;
   padding-bottom: 17px;
   justify-content: space-between;
+  position: relative;
 }
 
 .logo {
@@ -105,6 +107,8 @@ a {
 }
 
 .header-buttons {
+  display: flex;
+  gap: 21px;
 }
 
 .header-btn {
@@ -120,7 +124,6 @@ a {
 }
 
 .sign-in-btn {
-  margin-left: 21px;
   border: none;
   background-color: #02897a;
   color: #fff;
@@ -138,23 +141,55 @@ a {
 }
 
 .modal {
-  position: relative;
   right: 0;
   width: 200px;
   height: 400px;
   position: absolute;
-  background-color: rebeccapurple;
-  top: 0;
+  top: 100%;
   right: 0;
+  padding: 10px;
+  padding-top: 0;
+  pointer-events: none;
+  overflow: hidden;
 }
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  transform: translateY(-100%);
+  transition:
+    transform 250ms ease-in-out,
+    visibility 250ms ease-in-out;
+  pointer-events: none;
+  background-color: #fff;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+  visibility: hidden;
+}
+
+.modal .header-buttons {
+  margin-top: auto;
+  flex-direction: column;
+}
+
+.modal-open {
+  transform: translateY(0);
+  pointer-events: all;
+  visibility: visible;
+}
+
+/* .modal-open {
+  opacity: 1;
+  transform: translateY(0);
+} */
 
 .header-menu {
 }
 
 .modal .header-nav-list {
   margin: 0;
-  padding: 20px;
-  padding-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
